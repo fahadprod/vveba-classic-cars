@@ -1,3 +1,5 @@
+import DatePicker from "./date-picker";
+
 const PopularCars = () => {
   // Array of popular cars data
   const popularCars = [
@@ -26,6 +28,7 @@ const PopularCars = () => {
     <div className="wrapper">
       <section className="section-2 target" id="popular-cars">
         <h1 className="section-heading">Popular Cars</h1>
+        <DatePicker/>
         <div className="cards-wrapper center">
           {popularCars.map((car) => (
             <div key={car.id} className="card">
